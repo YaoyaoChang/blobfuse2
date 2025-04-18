@@ -9,17 +9,17 @@ components:
   - azstorage
 
 libfuse:
-  attribute-expiration-sec: 120
-  entry-expiration-sec: 120
-  negative-entry-expiration-sec: 240
+  attribute-expiration-sec: 0
+  entry-expiration-sec: 0
+  negative-entry-expiration-sec: 0
 
 file_cache:
   path: ./file_cache/conversationhubhot_tengchaolv
-  timeout-sec: 120
-  max-size-mb: 4096
+  timeout-sec: 0
+  max-size-mb: 0
 
 attr_cache:
-  timeout-sec: 7200
+  timeout-sec: 0
 
 azstorage:
   type: block

@@ -19,6 +19,6 @@ sudo chmod 777 /mnt/$MNT_DIR
 mkdir -p ./file_cache/$NAME
 
 # 挂载命令
-blobfuse2 mount /mnt/$MNT_DIR --config-file=${NAME}.yaml --allow-other
+blobfuse2 mount /mnt/$MNT_DIR --config-file=${NAME}.yaml --allow-other -o direct_io
 echo "mount $NAME to /mnt/$MNT_DIR success"
 echo ""
